@@ -75,8 +75,8 @@ const NewPostForm: React.FC<Props & { onClose?: () => void }> = ({
       if (!currentImage) {
         throw new Error("No image to upload");
       }
-  
-      const AIRequest = await fetch('http://127.0.0.1:5000', {
+
+      const AIRequest = await fetch('https://ai.xocial.network', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
